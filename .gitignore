@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+
+# PyInstaller build output
+build/
+dist/
+
+# Vendored Tesseract binaries -- populated locally by scripts/vendor_tesseract_*
+# before building; not committed (large binaries, platform-specific).
+vendor/
+
+# Generated extraction output
+vision/output/extracted_data.csv
+vision/output/review/
+vision/output/experiments/
+
+# GUI output written next to the input images when run against the samples
+vision/reference/extracted_data.csv
+vision/reference/review/
+
+# Local virtual environment
+.venv/
+
+# Real Topcon exports carry the patient's CPR number in the filename -- keep
+# them local, never commit (only anonymized samples belong in reference/)
+*_OCTReport_*
